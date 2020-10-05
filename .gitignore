@@ -5,6 +5,7 @@
 
 *.vcxproj
 *.sln
+*.vcxproj.filters
 # User-specific files
 *.rsuser
 *.suo
