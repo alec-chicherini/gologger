@@ -141,7 +141,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="gologer.cpp" />
+    <ClCompile Include="test.cpp" />
+    <ClCompile Include="gologger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gologger.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
