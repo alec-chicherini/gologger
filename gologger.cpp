@@ -1,11 +1,9 @@
 #include "gologger.h"
-//helper class gologger
 
 int gologger::id = 1;
 std::vector<std::string> gologger::vecLog{};
 std::chrono::steady_clock::time_point gologger::start = std::chrono::steady_clock::now();
 std::string gologger::separator = {};
-
 
 //using string stream instead operator+
 /*
