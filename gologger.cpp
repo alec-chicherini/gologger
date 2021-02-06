@@ -1,6 +1,6 @@
 #include "gologger.h"
-
-int gologger::id = 1;
+std::mutex gologger::log_mtx;
+std::atomic<long long> gologger::id = 1;
 std::vector<std::string> gologger::vecLog{};
 std::chrono::steady_clock::time_point gologger::start = std::chrono::steady_clock::now();
 std::string gologger::separator = {};
@@ -18,7 +18,7 @@ requires to_string_convertible <T>
 */
 
 
-gologger::gologger(std::string&& sep, std::string&& out) {
+gologger::gologger(std::string sep, std::string out) {
         separator = sep;
         output = out;
     };
@@ -40,7 +40,7 @@ gologger::gologger(std::string&& sep, std::string&& out) {
             " " +
             std::to_string(tm.tm_mday) +
             "." +
-            std::to_string(tm.tm_mon) +
+            std::to_string(tm.tm_mon+1) +
             "." +
             std::to_string(tm.tm_year % 100);
 
@@ -58,7 +58,6 @@ gologger::gologger(std::string&& sep, std::string&& out) {
     };
 
     
-
      std::vector<std::string> gologger::copy_log() {
          return vecLog;
      };
