@@ -9,6 +9,7 @@
 #include <sstream>
 #include <atomic>
 #include <mutex>
+#include <fstream>
 
 //Function where log called
 #define FUNC __FUNCTION__
@@ -78,6 +79,7 @@ class gologger
        //returning a log in std::vector<std::string>
        std::vector<std::string> copy_log();
 
-
+       //Save log by output name.
+       bool save_log();
 };
 
