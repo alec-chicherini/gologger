@@ -10,8 +10,9 @@ gologger::gologger(std::string sep, std::string out) {
         output = out;
     };
 
-    
+#ifdef _MSC_VER
      std::string gologger::getLocalTime() {
+
 
         time_t t = time(nullptr);
         std::tm tm{};
@@ -29,12 +30,23 @@ gologger::gologger(std::string sep, std::string out) {
             std::to_string(tm.tm_mon+1) +
             "." +
             std::to_string(tm.tm_year % 100);
-
     };
 
+
+#elif __GNUC__
+
+     std::string gologger::getLocalTime() {
+
+         std::string time = __TIME__;
+         time += " ";
+         time += __DATE__;
+         return time;
+     };
+
+#endif
      std::string gologger::getAppTime() {
         auto end = std::chrono::steady_clock::now();
-        std::chrono::duration<double> d = end - start;
+        std::chrono::duration<float> d = end - start;
 
         return std::string(std::to_string(d.count()) + "s");
     };

@@ -5,15 +5,20 @@
 #include <vector>
 #include <tuple>
 #include <chrono>
-#include <ctime>
 #include <sstream>
 #include <atomic>
 #include <mutex>
 #include <fstream>
+#include <ctime>
+
 
 //Function where log called
-#define FUNC __FUNCTION__
 
+#ifdef _MSC_VER
+#define FUNC __FUNCSIG__
+#elif __GNUC__
+#define FUNC __PRETTY_FUNCTION__
+#endif
 //Get current - next id for log entrance
 #define ID gologger::getId()
 

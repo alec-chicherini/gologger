@@ -1,15 +1,20 @@
-1,4,123
-2,0099FD14
-3,rvalue string,+,4,5.5
-4,19:25:35 7.2.21,main
-5,0.055930s,19:25:35 7.2.21,main,4,5.5,lvalue string,rvalue string,1
-6,0.168497s,19:25:36 7.2.21,main,4,5.5,lvalue string,rvalue string,1
-7,0.280072s,19:25:36 7.2.21,main,4,5.5,lvalue string,rvalue string,1
-8,0.389265s,19:25:36 7.2.21,main,4,5.5,lvalue string,rvalue string,1
-9,0.497262s,19:25:36 7.2.21,main,4,5.5,lvalue string,rvalue string,1
-10,0.607811s,19:25:36 7.2.21,main,4,5.5,lvalue string,rvalue string,1
-11,0.718000s,19:25:36 7.2.21,main,4,5.5,lvalue string,rvalue string,1
-12,0.826363s,19:25:36 7.2.21,main,4,5.5,lvalue string,rvalue string,1
-13,0.938317s,19:25:36 7.2.21,main,4,5.5,lvalue string,rvalue string,1
-14,1.045292s,19:25:36 7.2.21,main,4,5.5,lvalue string,rvalue string,1
-15,from lambda string
+2,0.136240s,10:5:55 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 2 msg,14776
+1,0.136259s,10:5:55 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 1 msg,14716
+3,0.651452s,10:5:56 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 1 msg,14716
+3,0.651461s,10:5:56 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 2 msg,14776
+5,1.159461s,10:5:56 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 2 msg,14776
+5,1.159461s,10:5:56 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 1 msg,14716
+7,1.670511s,10:5:57 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 1 msg,14716
+8,1.671018s,10:5:57 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 2 msg,14776
+9,2.179058s,10:5:57 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 2 msg,14776
+9,2.179058s,10:5:57 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 1 msg,14716
+11,2.690523s,10:5:58 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 2 msg,14776
+11,2.690523s,10:5:58 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 1 msg,14716
+13,3.201330s,10:5:58 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 2 msg,14776
+14,3.201349s,10:5:58 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 1 msg,14716
+15,3.717068s,10:5:59 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 1 msg,14716
+16,3.717440s,10:5:59 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 2 msg,14776
+17,4.226130s,10:5:59 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 2 msg,14776
+17,4.226137s,10:5:59 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 1 msg,14716
+19,4.737903s,10:6:0 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 1 msg,14716
+20,4.737933s,10:6:0 9.2.21,auto __cdecl main::<lambda_f7e7b706b0935d08c7e150840d1db000>::operator ()(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > &&) const,lambda 2 msg,14776
