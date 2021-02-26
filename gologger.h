@@ -31,8 +31,11 @@
 //Make log entrance with variable number of arguments: basic tipes in lvalues and rvalues. And macros ID, APP_TIME, LOCAL_TIME, FUNC
 #define LOG(...) gologger::log(__VA_ARGS__)
 
+
+
 class gologger
-{
+{   private:
+
     std::string output;
     static std::mutex log_mtx;
     static std::string separator;
@@ -86,5 +89,8 @@ class gologger
 
        //Save log by output name.
        bool save_log();
+
+
+
 };
 

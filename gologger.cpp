@@ -74,6 +74,6 @@ gologger::gologger(std::string sep, std::string out) {
          return true;
      }
     
-
+    
 
 

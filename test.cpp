@@ -13,7 +13,8 @@
 
 //TEST1 - general tests of all functionality.
 //TEST2 - mulithreading test
-#define TEST2
+//TEST3 - save to file
+#define TEST1
 #define TEST3
 
 int main() {
@@ -32,7 +33,11 @@ int main() {
 #ifdef TEST1
     int ix = 4;
     //float fx = 5.5f;
+    char charArr[] = {'a','b','c','\0'};
+    char* pCharArr = charArr;
     std::string str{ "lvalue string" };
+
+    LOG(charArr, pCharArr);
     LOG(ID, ix, 123);
     LOG(ID, &ix);
     LOG(ID, "rvalue string", '+', ix);
